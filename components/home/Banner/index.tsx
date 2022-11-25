@@ -4,14 +4,13 @@ import { FiArrowRight } from 'react-icons/fi'
 
 const Banner = () => {
   return (
-    <Flex w="full" h={['auto', "400px"]} py="20px" px="20px" bg="brand.white" align="center">
+    <Flex w="full" h={['auto', "450px"]} py="20px" px="20px" bg="brand.white" align="center">
         <VStack flex={['1', "0.6"]} align="flex-start" spacing={5}>
             <Heading size="xl" color="grey">Hi, I&apos;m Daniel Emmanuel</Heading>
             <Flex direction={['column', 'row']}>
-                <Text size="xl" fontWeight="bold" fontSize="30px" color="brand.yellow"> FullStack Web And Mobile Application </Text>
-                <Text size="xl" fontWeight="bold" fontSize="30px" color="grey" ml="5px">Engineer</Text>
+                <Text size="xl" fontWeight="bold" fontSize="30px" color="brand.yellow"> FullStack Web And Mobile Application Engineer </Text>
             </Flex>
-            <Text color="grey" textAlign={['justify', 'left']}>
+            <Text color="grey" textAlign={['justify', 'justify']}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure praesentium voluptas iusto impedit dolores rerum quia quasi provident cupiditate quod ipsa voluptatibus maxime ab incidunt recusandae, perferendis deserunt, similique sequi quibusdam beatae odit distinctio error. Non eveniet recusandae officia a similique.
             </Text>
 

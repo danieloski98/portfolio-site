@@ -6,7 +6,7 @@ const SKILLS = ['HTML', 'CSS', 'Javascript', 'Typescript', 'Nodejs', 'Reactjs', 
 
 const LeftSideBar = () => {
   return (
-    <Flex w="full" h="full" bg="brand.white" px="20px" py="20px" direction="column">
+    <Flex w="full" h="100vh" overflow="hidden" bg="brand.white" px="20px" py="20px" direction="column">
 
        <VStack w="full" h="250px" spacing={3} py="20px" borderBottomWidth="2px" borderBottomColor="brand.grey">
             <Box w="100px" h="100px" rounded="full" bg="brand.grey" />
@@ -14,13 +14,13 @@ const LeftSideBar = () => {
             <Text>Fullstack Software Engineer</Text>
 
             <HStack spacing={3}>
-                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.yellow" rounded="full">
+                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.grey" rounded="full">
                     <FiTwitter size={15} color="black" />
                 </HStack>
-                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.yellow" rounded="full">
+                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.grey" rounded="full">
                     <FiPhone size={15} color="black" />
                 </HStack>
-                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.yellow" rounded="full">
+                <HStack align="center" justify="center" w="30px" h="30px" bg="brand.grey" rounded="full">
                     <FiMail size={15} color="black" />
                 </HStack>
             </HStack>
@@ -29,22 +29,22 @@ const LeftSideBar = () => {
        <VStack w="full" spacing={5} py="20px" borderBottomWidth="2px" borderBottomColor="brand.grey">
 
             <HStack justify="space-between" w="full">
-                <Text bg="brand.yellow" fontSize="lg">Age:</Text>
+                <Text fontSize="lg">Age</Text>
                 <Text>25</Text>
             </HStack>
 
             <HStack justify="space-between" w="full">
-                <Text bg="brand.yellow" fontSize="lg">Residence</Text>
+                <Text fontSize="lg">Residence</Text>
                 <Text>Ada George</Text>
             </HStack>
 
             <HStack justify="space-between" w="full">
-                <Text bg="brand.yellow" fontSize="lg">Freelance</Text>
+                <Text fontSize="lg">Freelance</Text>
                 <Text color="green.400">Available</Text>
             </HStack>
 
             <HStack justify="space-between" w="full">
-                <Text bg="brand.yellow" fontSize="lg">Address</Text>
+                <Text fontSize="lg">Address</Text>
                 <Text>Camp David Street, Aluu</Text>
             </HStack>
 
