@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <Flex w="full" h={['auto', "400px"]} py="20px" px="20px" bg="brand.white" align="center">
         <VStack flex={['1', "0.6"]} align="flex-start" spacing={5}>
-            <Heading size="xl" color="grey">Hi, I'm Daniel Emmanuel</Heading>
+            <Heading size="xl" color="grey">Hi, I&apos;m Daniel Emmanuel</Heading>
             <Flex direction={['column', 'row']}>
                 <Text size="xl" fontWeight="bold" fontSize="30px" color="brand.yellow"> FullStack Web And Mobile Application </Text>
                 <Text size="xl" fontWeight="bold" fontSize="30px" color="grey" ml="5px">Engineer</Text>
