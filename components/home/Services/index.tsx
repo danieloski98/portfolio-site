@@ -1,4 +1,4 @@
-import { Flex, Heading, SimpleGrid, Text, Box, VStack } from '@chakra-ui/react'
+import { Flex, Heading, SimpleGrid, Text, Box, VStack, HStack } from '@chakra-ui/react'
 import React from 'react'
 import Image from 'next/image'
 
@@ -12,7 +12,8 @@ const Services = () => {
             </Text>
         </Flex>
 
-        <SimpleGrid columns={[1, 3]} spacing={5} mt="40px" >
+        <HStack w="full" justify="center">
+        <SimpleGrid columns={[1, 3]} spacing={5} mt="40px" w={['100%', '85%']}>
             <VStack w="full" h="250px" bg="brand.white" p="20px" justify="center">
                 <Image alt="codeing" src="/Icons/illustration.svg" width={80} height={80} />
                 <Heading size="md" as="h4" color="grey">Web Development</Heading>
@@ -31,6 +32,7 @@ const Services = () => {
                 <Text color="grey" mt="20px" fontSize="14px">Android and IOS Application Developent</Text>
             </VStack>
         </SimpleGrid>
+        </HStack>
     </Flex>
   )
 }

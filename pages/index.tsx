@@ -2,6 +2,7 @@ import { Box, Heading, Flex } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Banner from '../components/home/Banner'
+import Blog from '../components/home/Blog'
 import Education from '../components/home/Education'
 import Experience from '../components/home/Experience'
 import LeftSideBar from '../components/home/LeftSideBar'
@@ -30,6 +31,7 @@ export default function Home() {
           <Recommendation />
           <Education />
           <Experience />
+          <Blog />
         </Box>
 
         <Box w="70px" h="100vh" bg="brand.white" display={['none', 'block']}>

@@ -13,11 +13,13 @@ const Recommendation = () => {
             </Text>
         </Flex>
 
-        <SimpleGrid columns={[1, 3]} spacing={5} mt="40px" >
-            <RecommendationCard />
-            <RecommendationCard />
-            <RecommendationCard />
-        </SimpleGrid>
+        <HStack  justify="center" w="full">
+          <SimpleGrid columns={[1, 3]} spacing={5} mt="40px" w={['100%', '85%']} >
+              <RecommendationCard />
+              <RecommendationCard />
+              <RecommendationCard />
+          </SimpleGrid>
+        </HStack>
     </Flex>
   )
 }

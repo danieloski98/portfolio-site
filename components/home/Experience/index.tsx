@@ -13,7 +13,7 @@ const Experience = () => {
         </Flex>
 
         <HStack w="full" justify="center" mt="40px">
-            <Box w={['100%', "70%"]} h="auto" bg="brand.white" p="20px">
+            <Box w={['100%', "85%"]} h="auto" bg="brand.white" p="20px">
 
                 <Flex direction={['column', 'row']} align="flex-start" py="20px" borderBottomWidth="2px" borderBottomColor="brand.grey">
 
