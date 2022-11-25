@@ -27,7 +27,7 @@ export default function Home() {
       </Head>
 
       <Flex w={['100%', "full"]} h="auto">
-        <Box flex="0.2" bg="brand.white" h="100vh" display={['none', 'block']} >
+        <Box flex="0.2" bg="brand.white" h="100vh" overflow="auto" display={['none', 'block']} >
           <LeftSideBar />
         </Box>
 

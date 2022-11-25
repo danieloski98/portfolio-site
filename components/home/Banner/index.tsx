@@ -10,7 +10,7 @@ const Banner = () => {
             <Flex direction={['column', 'row']}>
                 <Text size="xl" fontWeight="bold" fontSize="30px" color="brand.yellow"> FullStack Web And Mobile Application Engineer </Text>
             </Flex>
-            <Text color="grey" textAlign={['justify', 'justify']}>
+            <Text textAlign={['center', 'left']} fontSize="14px" color="grey">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur iure praesentium voluptas iusto impedit dolores rerum quia quasi provident cupiditate quod ipsa voluptatibus maxime ab incidunt recusandae, perferendis deserunt, similique sequi quibusdam beatae odit distinctio error. Non eveniet recusandae officia a similique.
             </Text>
 
