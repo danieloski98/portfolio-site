@@ -2,20 +2,13 @@ import { Box, Heading, Flex } from '@chakra-ui/react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Banner from '../components/home/Banner'
+import Education from '../components/home/Education'
+import Experience from '../components/home/Experience'
 import LeftSideBar from '../components/home/LeftSideBar'
+import Recommendation from '../components/home/Recommendation'
 import RightMenu from '../components/home/RightMenuBar'
 import Services from '../components/home/Services'
-import prisma from '../lib/prisma'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const feeds = await prisma.post.findMany();
-  return {
-    props: {
-      feeds
-    },
-    revalidate: 10,
-  }
-}
 
 export default function Home() {
   return (
@@ -31,9 +24,12 @@ export default function Home() {
           <LeftSideBar />
         </Box>
 
-        <Box flex={['1', "0.8"]} mx={['0', "20px"]} overflow="auto">
+        <Box flex={['1', "0.8"]} h="100vh" px={['0', "20px"]} overflow="auto">
           <Banner />
           <Services />
+          <Recommendation />
+          <Education />
+          <Experience />
         </Box>
 
         <Box w="70px" h="100vh" bg="brand.white" display={['none', 'block']}>

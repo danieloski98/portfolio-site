@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Services = () => {
   return (
-    <Flex w="full" h="full" direction="column" py="40px" px={['20px', '0']}>
+    <Flex w="full" h="auto" direction="column" py="40px" px={['20px', '0']}>
         <Heading textAlign="center">My Services</Heading>
         <Flex justify="center">
             <Text textAlign="center" mt="20px" color="grey" w={['100%', '50%']} fontSize="14px">
