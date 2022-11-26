@@ -7,7 +7,7 @@ const RightMenu = () => {
         <VStack w="full" h="full" py="50px" spacing={8}>
             <Tooltip label="Home" hasArrow>
                 <VStack align="center" justify="center" bg="brand.yellow" w="50px" h="50px" rounded="full" cursor="pointer">
-                    <Image src="/home.svg" alt="home icon" width={25} height={25} />
+                    <Image src="/Home.svg" alt="home icon" width={25} height={25} />
                 </VStack>
             </Tooltip>
 
