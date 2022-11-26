@@ -2,8 +2,21 @@ import { Flex, Heading, HStack, Text, Box, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 const Education = () => {
+    const [y, setY] = React.useState(0)
+    React.useEffect(() => {
+        const update = () => {
+            setY(window.pageYOffset);
+            console.log('y');
+        }
+        window.addEventListener('scroll', update);
+        update();
+
+        return () => {
+            window.removeEventListener("scroll", update);
+        }
+    }, [])
   return (
-    <Flex direction="column" py="40px" px="20px">
+    <Flex direction="column" py="40px" px={['20px',"0px"]}>
         <Heading textAlign="center">Education</Heading>
 
         <Flex justify="center">

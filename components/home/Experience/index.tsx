@@ -3,7 +3,7 @@ import React from 'react'
 
 const Experience = () => {
   return (
-    <Flex direction="column" py="40px" px="20px">
+    <Flex direction="column" py="40px" px={['20px', "0px"]}>
         <Heading textAlign="center">Experience</Heading>
 
         <Flex justify="center">

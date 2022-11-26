@@ -3,6 +3,7 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Banner from '../components/home/Banner'
 import Blog from '../components/home/Blog'
+import Contact from '../components/home/Contact'
 import Education from '../components/home/Education'
 import Experience from '../components/home/Experience'
 import LeftSideBar from '../components/home/LeftSideBar'
@@ -32,6 +33,7 @@ export default function Home() {
           <Education />
           <Experience />
           <Blog />
+          <Contact />
         </Box>
 
         <Box w="70px" h="100vh" bg="brand.white" display={['none', 'block']}>

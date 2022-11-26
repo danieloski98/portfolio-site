@@ -4,7 +4,7 @@ import BlogCard from '../BlogCard'
 
 const Blog = () => {
     return (
-        <Flex direction="column" py="40px" px="20px">
+        <Flex direction="column" py="40px" px={['20px', "0px"]}>
             <Heading textAlign="center">Blog</Heading>
 
             <Flex justify="center">
@@ -14,7 +14,7 @@ const Blog = () => {
             </Flex>
 
             <HStack w="full" justify="center" mt="40px">
-            <Box w={['100%', "85%"]} h="auto" p="20px">
+            <Box w={['100%', "85%"]} h="auto" py="20px">
 
                 <SimpleGrid columns={[1, 3]} spacing={5}>
                     <BlogCard />
